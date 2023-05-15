@@ -1,0 +1,16 @@
+@use "../../shared/helpers/normalize.scss";
+@use "../../shared/helpers/variables.scss" as v;
+@use "../../shared/helpers/breakpoints.scss" as bp;
+@use "../../shared/helpers/generals.scss";
+@use "../../shared/components/header.scss";
+@use "../../shared/components/footer.scss";
+
+body {
+  p {
+    color: green;
+  }
+
+  button {
+    animation: all 0.3s ease-in-out;
+  }
+}

@@ -1,0 +1,83 @@
+@mixin view($media) {
+    @if $media ==xs {
+      @media only screen and (max-width: 580px) {
+        @content;
+      }
+    }
+  
+    @else if $media ==sm {
+      @media only screen and (max-width: 767px) {
+        @content;
+      }
+    }
+  
+    @else if $media ==pad {
+      @media only screen and (max-width: 768px) {
+        @content;
+      }
+    }
+  
+    @else if $media ==padlan {
+      @media only screen and (max-width: 1024px) and (orientation: landscape) {
+        @content;
+      }
+    }
+  
+    @else if $media ==md-up {
+      @media only screen and (min-width: 768px) {
+        @content;
+      }
+    }
+  
+    @else if $media ==md {
+      @media only screen and (max-width: 991px) {
+        @content;
+      }
+    }
+  
+    @else if $media ==lg {
+      @media only screen and (max-width: 1199px) {
+        @content;
+      }
+    }
+  
+    @else if $media ==lg-up {
+      @media only screen and (min-width: 992px) {
+        @content;
+      }
+    }
+  
+    @else if $media ==xl {
+      @media only screen and (min-width: 1200px) {
+        @content;
+      }
+    }
+  
+    @else if $media ==xxl {
+      @media only screen and (max-width: 1640px) {
+        @content;
+      }
+    }
+  
+    @else if $media ==xl2 {
+      @media only screen and (max-width: 1280px) {
+        @content;
+      }
+    }
+  
+    @else if $media ==xl3 {
+      @media only screen and (max-width: 1490px) {
+        @content;
+      }
+    }
+    @else if $media ==xl4 {
+      @media only screen and (min-width: 1920px) {
+        @content;
+      }
+    }
+    @else if $media ==xl5 {
+      @media only screen and (min-width: 2560px) {
+        @content;
+      }
+    }
+  }

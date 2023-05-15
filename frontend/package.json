@@ -1,0 +1,31 @@
+{
+  "name": "vite-boilerplate",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite ",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prod-task:convert-images": "webpify --src images/ --dest assets/images/ --replace",
+    "prod-task:mycompile": "sass pages:css --update --style compressed --no-source-map",
+    "prod-task:prefix": "postcss css --use autoprefixer --no-map --replace",
+    "prod": "run-s prod-task:*",
+    "new-page": "html"
+  },
+  "devDependencies": {
+    "autoprefixer": "*",
+    "cssnano": "*",
+    "glob": "^10.2.2",
+    "npm-run-all": "*",
+    "webpify": "*",
+    "page-init": "*",
+    "postcss": "*",
+    "postcss-cli": "*",
+    "postcss-scss": "*",
+    "sass": "^1.62.1",
+    "vite": "^4.3.2"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ]
+}
